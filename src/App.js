@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Main />
+      {/*<Main />
       <SearchForm />
-      <Footer />
+      <Footer />*/}
     </>
   );
 };
