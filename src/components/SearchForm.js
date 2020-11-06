@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
+import EmployeeContext from '../utils/EmployeeContext';
 import styled from 'styled-components';
 
 const StyledSearchForm = styled.form`
-
+    display: flex;
 `;
 
 const SearchForm = () => {
     const {search, handleInputChange, handleFormSubmit} = useContext
+    (EmployeeContext);
 
     return (
         <StyledSearchForm>

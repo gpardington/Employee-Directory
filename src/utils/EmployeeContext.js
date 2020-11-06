@@ -1,10 +1,10 @@
 import React from 'react';
 
-const UserContext = React.createContext({
+const EmployeeContext = React.createContext({
     result: {},
     search: "",
     handleInputChange: () => {},
     handleFormSubmit: () => {},
 });
 
-export default UserContext;
+export default EmployeeContext;
