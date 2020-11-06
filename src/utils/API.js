@@ -1,10 +1,9 @@
 import axios from 'axios';
-const BASEURL = "https://randomuser.me/api/"
 
-const API = {
-  search: function (query) {
-    return axios.get(BASEURL + query);
+const results = 20;
+
+export default {
+  getUsers: function () {
+    return axios.get(`https://randomuser.me/api/?results=${results}&nat=us`);
   },
 };
-
-export default API;

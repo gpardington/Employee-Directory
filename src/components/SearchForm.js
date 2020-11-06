@@ -22,8 +22,7 @@ const SearchForm = () => {
                     onChange={handleInputChange}
                 />
                 <br />
-            {/*Enter click functionality*/}
-
+                <button onClick={handleFormSubmit}>Search</button>
             </div>
         </StyledSearchForm>
     );
