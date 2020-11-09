@@ -13,8 +13,8 @@ class DataArea extends Component {
   };
 
   headings = [
-    { hname: "", width: "15%", sort: "descend" },
-    { hname: "Name", width: "25%", sort: "descend" },
+    { hname: "", width: "10%", sort: "descend" },
+    { hname: "Name", width: "20%", sort: "descend" },
     { hname: "Phone", width: "20%", sort: "descend" },
     { hname: "Email", width: "25%", sort: "descend" },
     { hname: "DOB", width: "15%", sort: "descend" },
@@ -49,7 +49,45 @@ class DataArea extends Component {
     this.setState({ filteredUsers: filtered });
   };
 
-// A-Z sort fuctionaility will go below
+// A-Z first name sort fuctionaility
+handleSort = (event) => {
+  const users = this.state.users;
+
+  let hname = event.target.attributes
+    .getNamedItem("data-key")
+    .value.toLowerCase();
+  
+    if (this.state.sort === "descend") {
+      this.setState({
+        sort: "ascend",
+      });
+    } else {
+      this.setState({
+        sort: "descend",
+      });
+    }
+
+    if (hname === "name") {
+      let sortedUsers = users.sort((a, b) => {
+        if (a.name.first < b.name.first) {
+          return -1;
+        }
+        if (a.name.first > b.name.first) {
+          return 1;
+        }
+        return 0;
+      });
+
+      if (this.state.sort === "descend") {
+        reverseSort(sortedUsers);
+      }
+      this.setState({ filteredUsers: sortedUsers });
+    }
+
+    function reverseSort(sortedUsers) {
+      return sortedUsers.reverse();
+    }
+};
 
 render() {
   return (
