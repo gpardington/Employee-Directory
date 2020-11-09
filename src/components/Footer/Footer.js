@@ -1,18 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
-const StyledFooter = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
-const Footer = () => {
-    return (
-        <StyledFooter>
-            &copy;{new Date().getFullYear()} Employee Directory
-        </StyledFooter>
-    ); 
-};
+function Footer() {
+  return (
+    <footer className="text-center fixed-bottom bg-dark">
+      <div className="card-footer">
+        <small className="text-white mx-auto">
+          &copy; 2020 • All Rights Reserved
+        </small>
+      </div>
+    </footer>
+  );
+}
 
 export default Footer;
