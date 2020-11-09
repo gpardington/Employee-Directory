@@ -1,8 +1,9 @@
 import React from "react";
+import "./style.css";
 
 function Headings(props) {
   return (
-    <thead className="thead-dark">
+    <thead className="thead">
       <tr>
         {props.headings.map(({ hname, width }) => {
           return (

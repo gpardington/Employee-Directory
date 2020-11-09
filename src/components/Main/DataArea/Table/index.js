@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./style.css";
 
 function Table({ users }) {
     function formatDate(date) {
@@ -20,7 +21,7 @@ function Table({ users }) {
                                 <img
                                     src={picture.medium}
                                     alt="profile"
-                                    className="img-responsive"
+                                    className="img-responsive img"
                                 />
                             </td>
                             <td className="align-middle">

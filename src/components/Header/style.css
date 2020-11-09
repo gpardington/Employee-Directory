@@ -1,0 +1,12 @@
+.navbar-bg {
+    background: rgb(7,96,231);
+    background: linear-gradient(90deg, rgba(7,96,231,1) 0%, rgba(20,221,71,1) 50%, rgba(240,239,10,1) 100%);
+}
+    
+.navbar-brand {
+    font-size: 5vh;
+    font-family: 'Fira Sans';
+    color: black;
+    font-weight: bolder;
+    text-shadow: 1px 2px lightcyan;
+  }

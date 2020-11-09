@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
 function SearchBar({ handleInputChange }) {
   return (
-    <div className="container mt-5">
+    <div className="container mt-3">
       <div className="row col-12 justify-content-center">
-        <form className="form-inline input-group p-2 searchbar">
+        <form className="form-inline input-group p-1 searchbar">
           <input
             className="form-control"
             type="search"
