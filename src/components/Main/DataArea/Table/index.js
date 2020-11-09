@@ -10,5 +10,36 @@ function Table({ users }) {
         return formattedDate;
     }
 
-    retur
+    return (
+        <tbody>
+            {users[0] !== undefined && users[0].name !== undefined ? (
+                users.map(({ name, login, picture, phone, email, dob }) => {
+                    return (
+                        <tr key={login.uuid}>
+                            <td className="align-middle">
+                                <img
+                                    src={picture.medium}
+                                    alt="profile"
+                                    className="img-responsive"
+                                />
+                            </td>
+                            <td className="align-middle">
+                                {name.first} {name.last}
+                            </td>
+                            <td className="align-middle">{phone}</td>
+                            <td className="align-middle">
+                                <a href={"mailto:" + email} target="__blank">
+                                    {email}
+                                </a>
+                            </td>
+                            <td className="align-middle">{formatDate(dob.date)}</td>
+                        </tr>
+                    );
+                })
+            ) : (
+                <></>
+            )}
+        </tbody>
+    );
 }
+export default Table;
