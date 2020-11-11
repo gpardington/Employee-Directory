@@ -1,6 +1,6 @@
 {
   "name": "employee-directory",
-  "homepage": "https://github.com/gpardington/Employee-Directory",
+  "homepage": "https://gpardington.github.io/Employee-Directory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
