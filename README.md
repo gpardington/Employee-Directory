@@ -35,12 +35,12 @@ Feel free to use the link provided above. Or, to run this application locally, c
 - RandomUser.me API
 
 ## Demo:
-![Demo](public/images/demo.gif?raw=true)
+![Demo](public/demo.gif?raw=true)
 
 ### Contributors:
 
 - Grant Pardington
-- [Create React App] (create-react-app.dev)
+- [Create React App](create-react-app.dev)
 
 ![npm](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)
 
@@ -52,6 +52,6 @@ If you have any questions, feel free to contact me:
 
 [GitHub](https://github.com/gpardington) 
 
-### CopyRight:
+### Copyright:
 
 Grant Pardington 2020 &copy;
